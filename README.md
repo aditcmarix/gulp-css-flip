@@ -1,17 +1,18 @@
-# css-flip [![Build Status](https://travis-ci.org/twitter/css-flip.png)](https://travis-ci.org/twitter/css-flip)
+# gulp-css-flip [![Build Status](https://travis-ci.org/itaymesh/gulp-css-flip.png)](https://travis-ci.org/itaymesh/gulp-css-flip)
 
-A CSS BiDi flipper. Generate left-to-right (LTR) or right-to-left (RTL) CSS from your source.
+
+A CSS BiDi flipper gulpjs plugin based on css-flip package
 
 ## Installation
 
 ```sh
-npm install css-flip
+npm install gulp-css-flip
 ```
 
 ## Example use
 
 ```js
-var flip = require('css-flip');
+var flip = require('gulp-css-flip');
 var css = 'div { float: left; }';
 
 flip(css);
@@ -21,7 +22,7 @@ flip(css);
 As a [Rework](https://github.com/reworkcss/rework) plugin:
 
 ```js
-var flip = require('css-flip');
+var flip = require('gulp-css-flip');
 var rework = require('rework');
 var css = 'div { float: left; }';
 
@@ -65,7 +66,7 @@ rework(css).use(flip.rework()).toString();
 
 ## Processing directives
 
-css-flip provides a way to ignore declarations or rules that should not be
+gulp-css-flip provides a way to ignore declarations or rules that should not be
 flipped.
 
 ### @noflip
@@ -119,13 +120,13 @@ The CLI can be used globally or locally in a package.
 View available options:
 
 ```
-css-flip --help
+gulp-css-flip --help
 ```
 
 Example use:
 
 ```sh
-css-flip path/to/file.css > path/to/file.rtl.css
+gulp-css-flip path/to/file.css > path/to/file.rtl.css
 ```
 
 ## Development
@@ -160,5 +161,4 @@ Copyright 2014 Twitter, Inc. and other contributors.
 
 Licensed under the MIT License
 
-css-flip was inspired by [ded/R2](https://github.com/ded/R2) and
-[Closure Stylesheets](https://code.google.com/p/closure-stylesheets/).
+gulp-css-flip is based on [css-filp](https://github.com/twitter/css-flip).

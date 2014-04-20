@@ -1,1 +1,1 @@
-exports = module.exports = require('./lib/css-flip');
+exports = module.exports = require('./lib/gulp-css-flip');

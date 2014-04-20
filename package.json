@@ -1,10 +1,10 @@
 {
-  "name": "css-flip",
-  "version": "0.3.0",
-  "description": "A CSS BiDi flipper.",
+  "name": "gulp-css-flip",
+  "version": "0.4.0",
+  "description": "A CSS BiDi flipper gulpjs plugin based on css-flip package",
   "main": "index.js",
   "bin": {
-    "css-flip": "bin/css-flip"
+    "css-flip": "bin/gulp-css-flip"
   },
   "files": [
     "index.js",
@@ -20,7 +20,7 @@
     "jshint": "~2.4.3"
   },
   "scripts": {
-    "lint": "jshint --show-non-errors bin/css-flip **/*.js",
+    "lint": "jshint --show-non-errors bin/gulp-css-flip **/*.js",
     "test": "npm run lint & npm run unit",
     "unit": "mocha --reporter spec",
     "watch": "mocha --reporter min --watch"
@@ -35,6 +35,6 @@
   "author": "Brett Stimmerman <bretts@twitter.com> (http://twitter.com/bretts)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twitter/css-flip.git"
+    "url": "https://github.com/itaymesh/gulp-css-flip.git"
   }
 }

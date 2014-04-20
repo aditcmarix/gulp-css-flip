@@ -4,7 +4,7 @@
 
 var fs = require('fs');
 var program = require('commander');
-var flip = require('../lib/css-flip');
+var flip = require('../lib/gulp-css-flip');
 
 program
   .usage('[options] <file ...>\n\n  css-flip is a CSS BiDi flipper.')
